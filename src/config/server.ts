@@ -60,7 +60,7 @@ app.get("/consulta-Maquina01", async (req, res) => {
 app.get("/consulta-rafael-mac02-lojaFulanoDeTal", async (req, res) => {
     var pulsosFormatados = converterPixRecebido(valordoPixMaquina2); //<<<<<<ALTERAR PARA O NUMERO DA MAQUINA
 
-    valordoPixMaquina2 = 0; //<<<<<<<<<ALTERAR PARA O NUMERO DA MAQUINA
+    valorDoPix = 0; //<<<<<<<<<ALTERAR PARA O NUMERO DA MAQUINA
 
     if (pulsosFormatados != "0000") {
         return res.status(200).json({ "retorno": pulsosFormatados });
